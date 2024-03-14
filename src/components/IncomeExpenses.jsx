@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, createContext, useReducer } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export const IncomeExpenses = () => {
@@ -17,7 +17,7 @@ export const IncomeExpenses = () => {
   ).toFixed(2);
 
   return (
-    <div className="inc-exp-container">
+    <div className="inc-exp-container third-color">
       <div>
         <h4>Income</h4>
         <p id="money-plus" className="money plus">

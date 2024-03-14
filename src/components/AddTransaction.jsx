@@ -1,4 +1,4 @@
-import React, { useState , useContext } from "react";
+import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export const AddTransaction = () => {
@@ -16,7 +16,7 @@ export const AddTransaction = () => {
       amount: +amount,
     };
     addTransaction(newTransaction);
-  }
+  };
 
   return (
     <>
@@ -36,11 +36,15 @@ export const AddTransaction = () => {
             Amount <br />
             (negative - expense, positive - income)
           </label>
-          <input type="number" id="amount" placeholder="Enter amount..."
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount..."
             value={amount}
-            onChange={(e) => setAmount(e.target.value)} />
+            onChange={(e) => setAmount(e.target.value)}
+          />
         </div>
-        <button className="btn">Add transaction</button>
+        <button className="btn third-color">Add transaction</button>
       </form>
     </>
   );
