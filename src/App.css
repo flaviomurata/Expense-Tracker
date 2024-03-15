@@ -9,10 +9,6 @@
 
 // Colors
 
-.first-color {
-    background: #5585b5;
-}
-
 .second-color {
     background: #53a8b6;
 }
@@ -67,9 +63,9 @@ h1 {
 }
 
 h3 {
-    border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin: 40px 0 10px;
+    border-bottom: 3px solid #dedede;
 }
 
 h4 {
@@ -117,8 +113,8 @@ label {
 
 input[type="text"],
 input[type="number"] {
-    border: 1px solid #dedede;
-    border-radius: 2px;
+    border: 2px solid #dedede;
+    border-radius: 5px;
     display: block;
     font-size: 16px;
     padding: 10px;
