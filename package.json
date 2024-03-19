@@ -2,13 +2,14 @@
   "name": "react-expense-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "pnpm server",
-    "server": "nodemon server.js"
+    "start": "node server",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"pnpm run server\" \"cd client && pnpm run dev\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Flavio Murata",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
